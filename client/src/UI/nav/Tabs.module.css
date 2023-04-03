@@ -1,0 +1,21 @@
+.tabs {
+	background: var(--white-color);
+	border-bottom: 1px solid var(--gray-300-color);
+	padding: 0 15px;
+}
+
+.tabs ul {
+	display: flex;
+}
+
+.item {
+	padding: 10px 15px;
+	cursor: pointer;
+	color: var(--gray-500-color);
+}
+
+.active {
+	color: var(--primary-color);
+	border-bottom: 2px solid var(--primary-color);
+	margin-bottom: -1px;
+}

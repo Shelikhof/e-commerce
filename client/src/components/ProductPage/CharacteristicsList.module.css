@@ -1,0 +1,14 @@
+.list {
+	margin-bottom: 20px;
+}
+
+.item {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 1fr 1fr;
+	line-height: 28px;
+}
+
+.item-title {
+	border-bottom: 1px dotted var(--gray-400-color);
+}

@@ -1,0 +1,45 @@
+.wrapper {
+	width: 280px;
+	background: var(--white-color);
+	border-radius: 6px;
+	border: 1px solid var(--gray-300-color);
+	padding: 20px;
+	height: max-content;
+}
+
+.price {
+	padding-bottom: 15px;
+	border-bottom: 1px solid var(--gray-300-color);
+}
+
+.price p,
+.total-price {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5px;
+}
+
+.discount {
+	color: var(--red-color);
+}
+
+.total-price {
+	font-weight: 600;
+	margin: 20px 0;
+}
+
+.total-price-value {
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.checkout-button {
+	background: var(--green-color);
+	width: 100%;
+}
+
+@media (max-width: 1000px) {
+	.wrapper {
+		width: 100%;
+	}
+}

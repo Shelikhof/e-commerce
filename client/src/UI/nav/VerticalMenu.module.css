@@ -1,0 +1,16 @@
+.vertical-menu {
+	background: var(--white-color);
+	border-radius: 6px;
+	padding: 10px;
+	width: 100%;
+}
+
+.item {
+	border-radius: 6px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.active {
+	background: var(--primary-light-color);
+}

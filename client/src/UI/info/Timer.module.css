@@ -1,0 +1,29 @@
+.timer {
+	display: flex;
+	gap: 6px;
+}
+
+.item {
+	background: var(--gray-600-color);
+	border-radius: 6px;
+	height: 50px;
+	width: 45px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.item p {
+	color: var(--white-color);
+}
+
+.item p:first-child {
+	font-weight: 700;
+}
+
+.label {
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: 400;
+}

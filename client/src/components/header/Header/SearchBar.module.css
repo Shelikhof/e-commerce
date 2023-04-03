@@ -1,0 +1,18 @@
+.search-wrapper {
+	width: 665px;
+	background: var(--white-color);
+	display: flex;
+	border: 3px solid var(--primary-color);
+	border-radius: 6px;
+}
+
+.search-input {
+	width: 420px;
+	border: none;
+	border-right: 2px solid var(--primary-color);
+}
+
+.search-select {
+	width: 145px;
+	border: none;
+}

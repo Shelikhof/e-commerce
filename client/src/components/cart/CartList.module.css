@@ -1,0 +1,21 @@
+.list {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	background: var(--white-color);
+	padding: 20px;
+	border-radius: 6px;
+	border: 1px solid var(--gray-300-color);
+}
+
+.list-footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+	.list {
+		padding: 5px;
+	}
+}

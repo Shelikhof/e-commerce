@@ -1,0 +1,51 @@
+/* @import url(../css/variables.css); */
+
+.blue-button {
+	background: var(--primary-color);
+	color: var(--white-color);
+}
+
+.white-button {
+	background: var(--white-color);
+	color: var(--primary-color);
+	border: 1px solid #dee2e7;
+}
+
+.white-button,
+.blue-button {
+	font-weight: 500;
+	border-radius: 6px;
+	transition: all 0.5s;
+}
+
+.white-button:hover,
+.blue-button:hover {
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.white-button:disabled,
+.blue-button:disabled {
+	color: var(--gray-600-color);
+	background: var(--gray-300-color);
+	box-shadow: none;
+	cursor: auto;
+}
+
+.big {
+	padding: 16px 20px;
+	border-radius: 8px;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.normal {
+	padding: 10px 16px;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.small {
+	padding: 7px 10px;
+	font-size: 13px;
+	line-height: 16px;
+}

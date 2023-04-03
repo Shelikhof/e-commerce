@@ -1,0 +1,22 @@
+.menu {
+	width: 100%;
+	word-wrap: normal;
+}
+
+.menu-list {
+	display: flex;
+	gap: 20px;
+	overflow: auto;
+	padding-bottom: 10px;
+}
+
+.active {
+	color: var(--gray-600-color);
+	background: var(--primary-light-color);
+}
+
+.item {
+	font-weight: 500;
+	padding: 3px 5px;
+	border-radius: 3px;
+}

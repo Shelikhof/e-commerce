@@ -1,0 +1,73 @@
+const user = await User.create({
+	email: 'as',
+	first_name: 'sa',
+	last_name: 'sasa',
+	password: 'nessa',
+});
+const refreshToken = await RefreshToken.create({
+	refresh_token: 'qwqwedsf21',
+	userId: 1,
+});
+const brand = await Brand.create({
+	name: 'apple',
+});
+const device = await Device.create({
+	brandId: brand.id,
+	price: 12,
+});
+// console.log(user);
+const refreshTokenUser = await user.getRefresh_token({ raw: true });
+// console.log(brand.id, user.id, refreshToken.id, device.id);
+const devices = await Device.findAll({ raw: true });
+console.log(devices);
+
+app.use(express.static(__dirname));
+app.use(multer({ dest: 'uploads' }).single('filedata'));
+app.post('/files', (req, res) => {
+	try {
+		let filedata = req.file;
+		console.log(filedata);
+		res.send('good');
+	} catch (error) {
+		console.log(error);
+	}
+});
+
+//загрузка одного файла
+app.use(express.static(__dirname));
+app.use(multer({ storage: storageConfig, fileFilter: fileFilter }).single('filedata'));
+app.post('/files', async (req, res) => {
+	try {
+		let filedata = req.file;
+		console.log(filedata);
+		const id = uuidv4();
+		const fole = await sharp(filedata.path)
+			.webp({ quality: 50 })
+			.toFile('uploads/' + id + '.webp')
+			.then(() => {
+				fs.unlinkSync(filedata.path);
+			});
+		console.log(fole);
+		res.send('good');
+	} catch (error) {
+		console.log(error);
+	}
+});
+
+//загрузка нескольких файлов
+app.use(express.static(__dirname));
+app.use(multer({ storage: storageConfig, fileFilter: fileFilter }).array('filedata', 12));
+app.post('/files', async (req, res) => {
+	let filedata = req.files;
+	console.log(filedata);
+	filedata.forEach(async (el) => {
+		const id = uuidv4();
+		const fole = await sharp(el.path)
+			.webp({ quality: 50 })
+			.toFile('uploads/' + id + '.webp')
+			.then(() => {
+				fs.unlinkSync(el.path);
+			});
+	});
+	// console.log(fole);
+});

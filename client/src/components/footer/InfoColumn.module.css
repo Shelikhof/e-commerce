@@ -1,0 +1,15 @@
+.title {
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+
+.item {
+	color: var(--gray-500-color);
+	cursor: pointer;
+}

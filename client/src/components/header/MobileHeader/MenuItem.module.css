@@ -1,0 +1,19 @@
+.menu-item {
+	height: 48px;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	padding: 12px;
+	width: 100%;
+	border-radius: 6px;
+}
+
+.menu-item img,
+.span {
+	width: 24px;
+	height: 24px;
+}
+
+.menu-item:hover {
+	background: var(--gray-200-color);
+}

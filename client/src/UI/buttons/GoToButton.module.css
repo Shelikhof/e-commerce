@@ -1,0 +1,14 @@
+.button {
+	display: flex;
+	align-items: center;
+	color: var(--primary-color);
+	gap: 5px;
+}
+
+.button:hover img {
+	transition: all 0.5s;
+}
+
+.button:hover img {
+	transform: translateX(3px);
+}

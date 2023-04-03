@@ -1,0 +1,19 @@
+.dot {
+	width: 6px;
+	height: 6px;
+	background: var(--gray-300-color);
+	border-radius: 50%;
+	display: block;
+}
+
+.list {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}

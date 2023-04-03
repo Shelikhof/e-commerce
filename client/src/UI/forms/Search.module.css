@@ -1,0 +1,29 @@
+.wrapper {
+	position: relative;
+	width: 100%;
+}
+
+.find-btn,
+.reset-btn {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* background: #000; */
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.find-btn {
+	left: 5px;
+}
+
+.reset-btn {
+	right: 5px;
+}
+
+.input {
+	padding: 0 30px;
+}

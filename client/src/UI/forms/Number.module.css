@@ -1,0 +1,28 @@
+.wrapper {
+	display: flex;
+	border: 1px solid var(--gray-300-color);
+	border-radius: 8px;
+	width: 150px;
+	align-items: center;
+	background: var(--white-color);
+	overflow: hidden;
+}
+
+.wrapper button {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wrapper span {
+	width: 70px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-left: 1px solid var(--gray-300-color);
+	border-right: 1px solid var(--gray-300-color);
+	font-weight: 500;
+}

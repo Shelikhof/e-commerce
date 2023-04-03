@@ -1,0 +1,15 @@
+.wrapper {
+	height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.first-row,
+.second-row {
+	font-size: 28px;
+	line-height: 32px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}

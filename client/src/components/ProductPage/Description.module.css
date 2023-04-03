@@ -1,0 +1,18 @@
+.description {
+	background: var(--white-color);
+	margin-top: 20px;
+	border-radius: 6px;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+
+.title {
+	font-weight: 600;
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+
+.text {
+	white-space: pre-wrap;
+	line-height: 22px;
+}

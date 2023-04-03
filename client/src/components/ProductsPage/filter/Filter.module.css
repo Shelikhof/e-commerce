@@ -1,0 +1,49 @@
+.input {
+	border: 1px solid var(--gray-400-color);
+	border-radius: 6px;
+}
+
+.filter {
+	width: 250px;
+	padding: 10px;
+	max-height: 1000px;
+	overflow: auto;
+}
+
+.filter::-webkit-scrollbar {
+	width: 5px;
+}
+
+.filter::-webkit-scrollbar-thumb {
+	background: var(--gray-400-color);
+	border-radius: 10px;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 24px;
+}
+
+.cost {
+	font-weight: 700;
+	margin-top: 15px;
+}
+
+.cost-inputs {
+	display: flex;
+	gap: 10px;
+	margin-top: 5px;
+}
+
+.cost-inputs input {
+	font-size: 12px;
+}
+
+.buttons {
+	margin-top: 5px;
+	padding-top: 15px;
+	border-top: 1px solid var(--gray-400-color);
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}

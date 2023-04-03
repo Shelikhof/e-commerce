@@ -1,0 +1,23 @@
+.mobile-header-wrapper {
+	background: var(--white-color);
+}
+
+.mobile-header {
+	height: 56px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.left-side,
+.right-side {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.left-side p {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+}

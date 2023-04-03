@@ -1,0 +1,50 @@
+.deal-item {
+	background: var(--white-color);
+	height: 235px;
+	width: 180px;
+	padding: 8px 20px;
+	border: 1px solid var(--gray-200-color);
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.deal-item img {
+	width: 140px;
+	height: 140px;
+	object-fit: cover;
+}
+
+.category {
+	width: 180px;
+	text-align: center;
+}
+
+.discount {
+	font-weight: 500;
+	font-size: 14px;
+	padding: 5px 12px;
+	border-radius: 999px;
+	background: var(--red-light-color);
+	color: var(--red-dark-color);
+}
+
+@media (max-width: 700px) {
+	.deal-item {
+		padding: 4px 10px;
+		gap: 8px;
+		height: 180px;
+	}
+	.category {
+		width: 140px;
+		font-size: 14px;
+		line-height: 15px;
+	}
+	.deal-item img {
+		width: 100px;
+		height: 100px;
+	}
+}
